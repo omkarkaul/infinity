@@ -1,4 +1,3 @@
 # infrastructure
-infra/*/.terraform*
-infra/*/*.tfvars
-services/infra/*/*.tfvars
+*/.terraform*
+*/*.tfvars
