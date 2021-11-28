@@ -1,12 +1,12 @@
 resource "aws_security_group" "example_task_security" {
     name = "example-task-security-group"
-    vpc_id = aws_vpc.infinity_vpc.id
+    vpc_id = local.infinity_vpc_id
 
     ingress {
         protocol = "tcp"
         from_port = 3000
         to_port = 3000
-        security_groups = [aws_security_group.elb_security.id]
+        security_groups = [local.elb_security_id]
     }
 
     egress {
