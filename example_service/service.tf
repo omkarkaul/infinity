@@ -1,6 +1,6 @@
 resource "aws_ecs_service" "example_service" {
   name            = "example-service"
-  cluster         = local.infinity_vpc_id
+  cluster         = local.infinity_cluster_id
   task_definition = aws_ecs_task_definition.example_task.arn
   desired_count   = 1
   launch_type     = "FARGATE"
