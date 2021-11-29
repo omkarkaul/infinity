@@ -1,5 +1,9 @@
 ## Example ECS Service
 This is an example of how I (or you, if you want to replicate this) would deploy some specific containerised workload to the Infinity cluster.  
+   
+---
+   
+The goal here is to spin up a new ECS Service, Task, and Task security group, along with an ALB target group for every individual containerised workload I want to deploy on the cluster. Role based access TBA.
 
 ---
 
